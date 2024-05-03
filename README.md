@@ -58,3 +58,8 @@ print('file commands.h generated..')
 ## Conclusion
 
 This project demonstrates the feasibility of deploying ML models to resource-limited devices like microcontrollers. By using Edge Impulse and NXP's tools, a custom ML model can be deployed to embedded systems for various applications, such as sound detection, image classification and etc.
+
+## Tutorial Reference
+
+This project was developed following a similar project outlined in the technical tutorial [AN13065](https://www.nxp.com/docs/en/application-note/AN13065_Rev0.pdf) by NXP. The tutorial provided valuable insights and guidance from setup to deployment, which were instrumental in the development of this project.
+
