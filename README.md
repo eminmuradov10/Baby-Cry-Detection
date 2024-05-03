@@ -33,7 +33,7 @@ The model was deployed to the NXP MIMTRX1064 Microcontroller using the MCUXpress
 ## Important Files
 
 - `commands.h`: Contains sample test sounds to test the model on the MIMTRX1064 Microcontroller. These sounds can be converted to array format using a sample Python script below:
-
+```
 from scipy.io import wavfile
 import os
 import argparse
@@ -52,10 +52,9 @@ with open('commands.h', 'w') as fout:
   data.tofile(fout, ',', '%d')
   print('};\n', file=fout)
 print('file commands.h generated..')
-
+```
 - `kws_mfcc.h`: Contains the necessary settings for feature extraction from the audio files.
 
 ## Conclusion
 
 This project demonstrates the feasibility of deploying ML models to resource-limited devices like microcontrollers. By using Edge Impulse and NXP's tools, a custom ML model can be deployed to embedded systems for various applications, such as sound detection, image classification and etc.
-```
