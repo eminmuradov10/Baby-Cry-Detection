@@ -1,4 +1,4 @@
-# Embedded AI Research Project: Baby Cry Detection
+# Embedded AI Research: Baby Cry Detection
 
 ## Overview
 
