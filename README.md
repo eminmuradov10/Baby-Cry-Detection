@@ -12,7 +12,23 @@ The dataset consists of 432 audio recordings, with 108 recordings for each categ
 
 ### Data Preparation
 
-To prepare the data for training, the audio recordings were converted to the pcm_s16le format using the [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) tool. This format is commonly used for training ML models.
+To prepare the data for training, the audio recordings were converted to the pcm_s16le format using the [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) tool. This format is commonly used for converting the audio files to feasible format. A sample code for conversion has been provided below:
+
+```
+import os
+
+input_folder = 'Baby_Cry'
+output_folder = 'Baby_Cry_pcm_s16le_format'
+
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
+
+for filename in os.listdir(input_folder):
+    if filename.endswith(".wav") or filename.endswith(".ogg"):
+        input_file = os.path.join(input_folder, filename)
+        output_file = os.path.join(output_folder, os.path.splitext(filename)[0] + ".wav")
+        os.system(f"ffmpeg -y -i {input_file} -acodec pcm_s16le -ac 1 {output_file}")
+```
 
 ### Training
 
