@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project aims to develop a baby cry detection model and deploy it to the NXP MIMTRX1064 Microcontroller using MCUXpresso IDE. The model distinguishes among 3 categories: baby laugh, baby cry, and noise.
+This project aims to develop a baby cry detection model and deploy it to the NXP MIMTRX1064 Microcontroller using MCUXpresso IDE. The model distinguishes among 3 categories: baby laugh, baby cry, and silence.
 
 ## Dataset
 
@@ -12,7 +12,7 @@ The dataset consists of 432 audio recordings, with 108 recordings for each categ
 
 ### Data Preparation
 
-To prepare the data for training, the audio recordings were converted to the pcm_s16le format using the ffmpeg tool. This format is commonly used for training ML models.
+To prepare the data for training, the audio recordings were converted to the pcm_s16le format using the [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) tool. This format is commonly used for training ML models.
 
 ### Training
 
