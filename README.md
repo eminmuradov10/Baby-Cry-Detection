@@ -69,7 +69,7 @@ with open('commands.h', 'w') as fout:
   print('};\n', file=fout)
 print('file commands.h generated..')
 ```
-- `kws_mfcc.h`: Contains the necessary settings for feature extraction from the audio files.
+- `kws_mfcc.h`: Contains the necessary settings for feature extraction from the test sounds in `commands.h` .
 
 ## Conclusion
 
