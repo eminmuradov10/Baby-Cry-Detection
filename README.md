@@ -60,6 +60,7 @@ parser.add_argument('--wave', type=str, default=\
                     help='Get audio wave file')
 cmd_args, _ = parser.parse_known_args()
 audioFile = cmd_args.wave
+
 # Path to saved model directory
 
 rate, data = wavfile.read(audioFile)
